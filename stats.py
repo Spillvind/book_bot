@@ -13,6 +13,19 @@ def count_all_characters(book_text):
             characters[character] = 1
     return characters
 
+def report_all_characters(book_text):
+    report_characters = []
+    characters = count_all_characters(book_text)
+    for char, count in characters.items():
+        one_dict = {"char": char, "num": count}
+        report_characters.append(one_dict)
+    sorted_report_characters = sorted(report_characters, key=lambda dict: dict["num"], reverse=True)
+    return sorted_report_characters
+    
+        
+        
+
+
 
 
 
