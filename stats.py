@@ -21,14 +21,3 @@ def report_all_characters(book_text):
         report_characters.append(one_dict)
     sorted_report_characters = sorted(report_characters, key=lambda dict: dict["num"], reverse=True)
     return sorted_report_characters
-    
-        
-        
-
-
-
-
-
-
-    
-
